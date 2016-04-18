@@ -1,0 +1,41 @@
+<div><div class="row">
+<div class="col-lg-12">
+{{info}}
+</div>
+<div class="col-lg-4">
+	<input class="form-control" type="text" ng-model="forSend">
+	<button class="btn btn-warning" ng-click="sendToServer()">send to Server</button>
+</div>
+<div class="col-lg-4"><button class="btn btn-success" ng-click="buttonClicked()">typedval</button></div>
+<div class="well">{{myValue}}</div>
+</div>
+<div class="row">
+<div class="col-lg-sm12">
+<div class="col-lg-6">
+<input type="file" file-model="myFile"/>
+</div>
+<div class="col-lg-6">
+<button class="btn btn-primary" ng-click="uploadFile()">upload</button>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12" ng-repeat="file in serverfiles">
+<div class="col-lg-7">
+<div class="col-lg-4 bg-warning">{{file}}</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="well">
+{{uploadfile}}
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<button class="btn btn-info" ng-click="GetFiles()">Get Images From Server</button>
+</div>
+<div class="col-lg-12">
+<img class="img img-thumbnail img-responsive" ng-src="{{imager}}" width="200"/>
+</div>
+</div>
